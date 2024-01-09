@@ -10,6 +10,14 @@ In hub-spoke architecture, both Public DNS and Private DNS Zone azure services a
 5. An app hosted in spoke network, without having public ip address, having DNAT rule via firewall, can be connected from internet using externally resolvable domain name.
 6. An app hosted in spoke network, should be accessible via another spoke network, using internally resolvable domain name.
 
+### Local environment
+Before running any of the test cases specified below, a developer would need to login to terminal/shell and set up correct subscription. Example commands are specified below. After running the test scenrios, destroy the resources created and use `az logout` command to log out of the shell.
+
+```sh
+az login --tenant cloudadminsystemsinmotion.onmicrosoft.com
+
+az account set --subscription "sandbox.nexientcloud.com"
+```
 ### Test case 1
 An app hosted in hub network, should be accessible via internet using externally resolvable domain name.
 
