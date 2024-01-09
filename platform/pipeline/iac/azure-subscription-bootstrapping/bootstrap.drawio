@@ -1,0 +1,258 @@
+<mxfile host="app.diagrams.net" modified="2023-12-15T18:46:53.644Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="OovtWUBvbGPfXLkNNkyb" version="22.1.9" type="device">
+  <diagram name="Page-1" id="f34acrSi9D9ibMz0_r-A">
+    <mxGraphModel dx="4631" dy="1034" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-1" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Run command &lt;br&gt;`make bootstrap`&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-1770" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Run command &lt;br&gt;`make pipeline`&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-1430" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-3" value="Enterprise&amp;nbsp;&lt;br&gt;Admin(EA)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="-2500" y="50" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-4" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Clone `bootstrap-subscription` repository&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-2200" y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-5" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Login to azure account using terminal/shell&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-2390" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-7" value="&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Creates&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;1. Initial subscription. Management Group&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;2. SPN with&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp;Role - Owner, SubscriptionCreator&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp;Scope - Subscription Id of Initial subscription&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. Resource Group +&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Storage Account +&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Key Vault(&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Permissions - Manage secret to EA)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+          <mxGeometry x="-1769" y="130" width="250" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-8" value="&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Creates&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;1. Azure DevOps Pipeline&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;2. Service Connection for pipeline&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+          <mxGeometry x="-1425" y="130" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-9" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Run command &lt;br&gt;`make configure`&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-1980" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-10" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Run command &lt;br&gt;`make get-properties`&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-1800" y="360" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-11" value="Enterprise&amp;nbsp;&lt;br&gt;Admin(EA)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="-2500" y="360" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-12" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Clone `tg-base-resource`&lt;br&gt;repository&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-2220" y="360" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-13" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Login to azure account using terminal/shell&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-2400" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-14" value="&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;1. Clones `tg-base-resource-properties`&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;2. Merges `tg-base-resource`&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;and&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;`tg-base-resource-properties`&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+          <mxGeometry x="-1799" y="450" width="280" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-15" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Run command &lt;br&gt;`make configure`&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-2000" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-16" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Run command &lt;br&gt;`make pipeline`&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-1450" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wNbTaOA1KIy0ftxwt_gk-17" value="&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Creates&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;1. Azure DevOps Pipeline to manage `tg-base-resource` repo&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;2. Service Connection for pipeline that uses SPN of the initial subscription&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+          <mxGeometry x="-1445" y="450" width="210" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="XvCVCBna7NF6vPJrASvx-3" value="Platform Developer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="-2500" y="730" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XvCVCBna7NF6vPJrASvx-4" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Clone `tg-hub-network`&lt;br&gt;repository&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-2220" y="730" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="XvCVCBna7NF6vPJrASvx-5" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Login to azure account using terminal/shell&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-2400" y="730" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="XvCVCBna7NF6vPJrASvx-6" value="&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;1. Clones `tg-hub-network-properties`&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;2. Merges `tg-hub-network`&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;and&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;`tg-hub-network-properties`&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+          <mxGeometry x="-1800" y="810" width="280" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="XvCVCBna7NF6vPJrASvx-7" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Run command &lt;br&gt;`make configure`&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-2000" y="730" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="XvCVCBna7NF6vPJrASvx-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Run command &lt;br&gt;`make pipeline`&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-1450" y="730" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="XvCVCBna7NF6vPJrASvx-9" value="&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Creates&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;1. Azure DevOps Pipeline to manage `tg-hub-network` repo&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;2. Service Connection for pipeline that uses SPN of the subscription&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+          <mxGeometry x="-1450" y="810" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-1" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1860" y="77" as="sourcePoint" />
+            <mxPoint x="-1770" y="77" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-2" value="4" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-3" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1650" y="77" as="sourcePoint" />
+            <mxPoint x="-1430" y="77" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-4" value="5" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-5" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-2040" y="78" as="sourcePoint" />
+            <mxPoint x="-1980" y="78" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-2010" y="78" />
+              <mxPoint x="-2010" y="79" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-6" value="3" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-7" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="wNbTaOA1KIy0ftxwt_gk-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1750" y="530" as="sourcePoint" />
+            <mxPoint x="-2200" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-8" value="2" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-9" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" target="wNbTaOA1KIy0ftxwt_gk-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-2460" y="80" as="sourcePoint" />
+            <mxPoint x="-1650" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-10" value="1" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-12" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Run command &lt;br&gt;`make get-properties`&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-1800" y="730" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-13" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Trigger pipeline&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-1180" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-14" value="&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Creates&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;1. After pipeline run Azure cloud has&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1. Subscriptions (root for product and iac, all envs for product, all envs for iac)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 2. Resource Group + Storage Account + SPN + Key Vault(per subscription)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 3. A Management group for all subscriptions&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 4. SPN per subscription&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Role - Owner&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Scope - Respective Subscription&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;2. Remote state stored in initial subscription&#39;s storage account&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="-1170" y="450" width="500" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-15" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Trigger pipeline&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-1170" y="730" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-16" value="&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Creates&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;1. After pipeline run Azure cloud has&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1. Hub Network/s&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;2. Remote state stored in subscription&#39;s storage account in which hub network is created.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 13px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="-1170" y="810" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-17" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;dashed=1;" edge="1" parent="1" source="wNbTaOA1KIy0ftxwt_gk-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-2450" y="90" as="sourcePoint" />
+            <mxPoint x="-2410" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-18" value="1" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-22" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wNbTaOA1KIy0ftxwt_gk-13" target="wNbTaOA1KIy0ftxwt_gk-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-2260" y="90" as="sourcePoint" />
+            <mxPoint x="-2190" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-23" value="2" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-24" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wNbTaOA1KIy0ftxwt_gk-12" target="wNbTaOA1KIy0ftxwt_gk-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-2030" y="88" as="sourcePoint" />
+            <mxPoint x="-1970" y="88" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-2030" y="400" />
+              <mxPoint x="-2030" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-25" value="3" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-27" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="wNbTaOA1KIy0ftxwt_gk-15" target="wNbTaOA1KIy0ftxwt_gk-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1850" y="87" as="sourcePoint" />
+            <mxPoint x="-1760" y="87" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-28" value="4" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-29" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="wNbTaOA1KIy0ftxwt_gk-10" target="wNbTaOA1KIy0ftxwt_gk-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1640" y="87" as="sourcePoint" />
+            <mxPoint x="-1420" y="87" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-30" value="5" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-35" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;dashed=1;" edge="1" parent="1" source="XvCVCBna7NF6vPJrASvx-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-2460" y="400" as="sourcePoint" />
+            <mxPoint x="-2410" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-36" value="1" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-37" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1.02;exitY=0.405;exitDx=0;exitDy=0;dashed=1;exitPerimeter=0;" edge="1" parent="1" source="XvCVCBna7NF6vPJrASvx-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-2270" y="410" as="sourcePoint" />
+            <mxPoint x="-2220" y="758" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-38" value="2" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-40" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XvCVCBna7NF6vPJrASvx-4" target="XvCVCBna7NF6vPJrASvx-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-2050" y="410" as="sourcePoint" />
+            <mxPoint x="-2000" y="410" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-41" value="3" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-42" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="XvCVCBna7NF6vPJrASvx-7" target="4FYzvDKBaU3467gTnonA-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1870" y="410" as="sourcePoint" />
+            <mxPoint x="-1790" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-43" value="4" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-44" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1.003;exitY=0.405;exitDx=0;exitDy=0;dashed=1;exitPerimeter=0;entryX=-0.014;entryY=0.391;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="4FYzvDKBaU3467gTnonA-12" target="XvCVCBna7NF6vPJrASvx-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1640" y="410" as="sourcePoint" />
+            <mxPoint x="-1460" y="758" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-45" value="5" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-46" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="wNbTaOA1KIy0ftxwt_gk-16" target="4FYzvDKBaU3467gTnonA-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1780" y="360" as="sourcePoint" />
+            <mxPoint x="-1680" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-47" value="6" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-49" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1.02;exitY=0.407;exitDx=0;exitDy=0;dashed=1;exitPerimeter=0;" edge="1" parent="1" source="XvCVCBna7NF6vPJrASvx-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1320" y="410" as="sourcePoint" />
+            <mxPoint x="-1180" y="759" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4FYzvDKBaU3467gTnonA-50" value="6" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=13;" connectable="0" vertex="1" parent="4FYzvDKBaU3467gTnonA-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
