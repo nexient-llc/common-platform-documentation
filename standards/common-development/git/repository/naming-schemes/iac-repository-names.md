@@ -50,9 +50,9 @@ The **type** is a classification of the module type for the [tool](#tool) in que
     - `provider` - We don't currently have any custom Terraform providers, but if we need them in the future, the [type](#type) field must be set to `provider`.
 
 - Helm
-    - `library_chart` - Equivalent to a `module_library` in Terraform, a library chart cannot stand alone and does not deploy any resources directly, instead it provides snippets for other charts to reuse.
-    - `deployment_chart` - A deployment chart roughly maps to a `module_primitive` in Terraform, it represents a single deployment type (i.e. deployments for long-running services are distinct from those that run batch jobs and would be separate `deployment_chart`s)
-    - `umbrella_chart` - A "chart of charts," roughly equivalent to our `module_collection` or `module_reference` modules for Terraform. These charts include at least one `deployment_chart` and are a single entrypoint that represents a complete solution for a single application, service, or job.
+    - `chart_library` - Equivalent to a `module_library` in Terraform, a library chart cannot stand alone and does not deploy any resources directly, instead it provides snippets for other charts to reuse.
+    - `chart_deployment` - A deployment chart roughly maps to a `module_primitive` in Terraform, it represents a single deployment type (i.e. deployments for long-running services are distinct from those that run batch jobs and would be separate `chart_deployment`s)
+    - `chart_umbrella` - A "chart of charts," roughly equivalent to our `module_collection` or `module_reference` modules for Terraform. These charts include at least one `chart_deployment` and are a single entrypoint that represents a complete solution for a single application, service, or job.
 
 ## Resource
 
@@ -82,15 +82,15 @@ This collection module around an ActiveMQ broker would include multiple resource
 
 This reference module contains everything you would need to deploy a full observability integration to AWS and SumoLogic. There would be AWS components (wrapped up in a `module_collection`) as well as Sumo-specific components (wrapped in their own separate `module_collection`). Reference modules should contain all the necessary resources (either directly or through child `module_collection`s) to go from a blank slate (just an account) to a fully-functional system or application. Since this module has a specific cloud and vendor for which it was designed, the [provider](#provider) is set to the cloud (`aws`) and the [resource](#resource) includes the vendor's name and its purpose (`sumologic_observability`)
 
-- `helm-k8s-library_chart-launch`
+- `helm-k8s-chart_library-launch`
 
 A library chart containing Launch's "standard library" of Helm snippets. Using this chart doesn't actually result in any resources being created or destroyed.
 
-- `helm-k8s-deployment_chart-containerized_application`
-- `helm-k8s-deployment_chart-batch_job`
+- `helm-k8s-chart_deployment-containerized_application`
+- `helm-k8s-chart_deployment-batch_job`
 
 Two examples of different deployments that might be accomplished through Helm. Both of these deployment charts may pull from the same library chart in order to build up their templates.
 
-- `helm-k8s-umbrella_chart-my_application`
+- `helm-k8s-chart_umbrella-my_application`
 
 A helm chart that covers all Kubernetes deployment concerns for a single service, called `my_application`. The complexity of the application will determine the number of deployment charts that this umbrella chart pulls in; a simple application may be a single deployment chart, where a more complex application that includes several services and background jobs may pull from several deployment charts.
