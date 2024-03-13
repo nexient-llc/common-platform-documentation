@@ -1,6 +1,6 @@
 # Helm Deployment Chart Development Standards
 ## Introduction
-This document outlines the development standards for Helm deployment charts. These standards are designed to ensure consistency, maintainability, and best practices in chart development. In general, Launch standards are inclusive of [Helm Chart Best Practices](https://helm.sh/docs/chart_best_practices/). Any variations from these Best Practices will be recorded in this document.
+This document outlines the development standards for Helm deployment charts. These standards are designed to ensure consistency, maintainability, and best practices in chart development. In general, Launch standards are a superset of [Helm Chart Best Practices](https://helm.sh/docs/chart_best_practices/). Any variations from the Helm Chart Best Practices will be recorded in this document.
 
 ## Table of Contents
 - [Helm Deployment Chart Development Standards](#helm-deployment-chart-development-standards)
