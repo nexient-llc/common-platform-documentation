@@ -25,3 +25,9 @@ Each helpers should have a comment block that contains at least this information
 ## Testing
 
 Helpers should be tested along side all other templates included in the chart. 
+
+---
+**Document Revision History**
+| Date | Version | Author |Notes |
+| --- | --- | --- | --- |
+| 2024-03-15 | 1.0 | Ben Vaughan | Initial Release |

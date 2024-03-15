@@ -1,22 +1,21 @@
 # Helm Library Chart Development Policy
 
 ## Overview
-This document outlines the policy and guidelines for developing Helm library charts within our project.
+This document outlines guidelines for developing Helm library charts within Launch projects.
 
 ## Purpose
-The purpose of this policy is to ensure consistency, maintainability, and reusability of Helm library charts across our project.
+The purpose of this policy is to ensure consistency, maintainability, and reusability of Helm library charts across Launch projects.
 
 ## Guidelines
 
 ### Chart Structure
-* The library chart should have a clear and concise directory structure.
-* The chart should include a `Chart.yaml` file that defines the chart metadata.
-* The chart should include a `values.yaml` file that contains the default values for the chart.
-* The chart should include a `templates` directory that contains the template files for the chart.
+* The chart must include a `Chart.yaml` file that defines the chart metadata.
+* The chart must include a `values.yaml` file that contains the default values for the chart.
+* The chart must include a `templates` directory that contains the template files for the chart.
 
 ### Chart Dependencies
-* The library chart should declare its dependencies in the `Chart.yaml` file.
-* Dependencies should be specified using the `dependencies` section.
+* The library chart must declare its dependencies in the `Chart.yaml` file.
+* Dependencies must be specified using the `dependencies` section.
 * In general, Library Charts should **not** have dependencies.
 
 ### Chart Templates
@@ -29,8 +28,8 @@ The purpose of this policy is to ensure consistency, maintainability, and reusab
   * `launch-operator-library`
 
 ### Documentation
-* Provide clear and concise documentation for the chart.
-* Include a `README.md` file with instructions on how to use and configure the chart, including a reference for all variables that may be passed to the chart. 
+* Provide clear and concise documentation for the Library chart.
+* Include a `README.md` file with instructions on how to use the chart, including a reference for all variables that may be passed to the chart. 
   * Chart documentation tools are documented in the [helm-development top-level README](../../README.md#documentation)
 * Document any prerequisites or assumptions.
 
@@ -44,3 +43,9 @@ The purpose of this policy is to ensure consistency, maintainability, and reusab
 Following these guidelines will help ensure consistency and maintainability of Helm library charts within our project. Please refer to this document when developing new library charts or making changes to existing ones.
 
 For any questions or clarifications, please reach out to the project maintainers.
+
+---
+**Document Revision History**
+| Date | Version | Author |Notes |
+| --- | --- | --- | --- |
+| 2024-03-15 | 1.0 | Ben Vaughan | Initial Release |

@@ -2,7 +2,13 @@
 
 ## Introduction
 
-This document contains Best Practices and tools that the Launch Platform Team uses to develop and maintain Helm charts. 
+This document contains Best Practices and tools that the Launch Platform Team uses to develop and maintain Helm charts. In general, Launch standards are a superset of [Helm Chart Best Practices](https://helm.sh/docs/chart_best_practices/). Any variations from the Helm Chart Best Practices will be recorded in this document.
+
+## Helm Development Standards Documents
+
+[Helm Deployment Charts](charts/deployment/README.md)
+[Helm Library Charts](charts/library/README.md)
+[Helm Template Helpers](helpers/README.md)
 
 ## Tools
 
@@ -33,3 +39,9 @@ It is considered a [Best Practice](https://helm.sh/docs/howto/charts_tips_and_tr
 ### Deployment Charts
 
 Conforming with [Helm Best Practices](https://helm.sh/docs/chart_template_guide/subcharts_and_globals/), deployment charts should be able to be deployed on their own, without dependency requirements from sibling charts. It is not possible to pass an output from one child chart to the input of the parent or another child chart.
+
+---
+**Document Revision History**
+| Date | Version | Author |Notes |
+| --- | --- | --- | --- |
+| 2024-03-15 | 1.0 | Ben Vaughan | Initial Release |
