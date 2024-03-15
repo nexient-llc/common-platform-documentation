@@ -33,9 +33,3 @@ The process of evolutionary database migration typically involves the following 
 ## Conclusion
 
 Evolutionary database migration is a powerful technique that enables continuous deployment of applications by allowing for seamless updates to the database schema. By following a structured migration process and leveraging automated tools, developers can make incremental changes to the database while preserving existing data and ensuring the application's functionality. This approach promotes collaboration, flexibility, and reliability in managing database changes, ultimately leading to faster and more efficient application deployment.
-
----
-**Document Revision History**
-| Date | Version | Author |Notes |
-| --- | --- | --- | --- |
-| 2024-03-15 | 1.0 | Ben Vaughan | Initial Release |

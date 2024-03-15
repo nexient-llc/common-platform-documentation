@@ -43,9 +43,3 @@ The purpose of this policy is to ensure consistency, maintainability, and reusab
 Following these guidelines will help ensure consistency and maintainability of Helm library charts within our project. Please refer to this document when developing new library charts or making changes to existing ones.
 
 For any questions or clarifications, please reach out to the project maintainers.
-
----
-**Document Revision History**
-| Date | Version | Author |Notes |
-| --- | --- | --- | --- |
-| 2024-03-15 | 1.0 | Ben Vaughan | Initial Release |

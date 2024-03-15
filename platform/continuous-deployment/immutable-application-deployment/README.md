@@ -18,7 +18,7 @@ Immutable application deployments refer to the practice of never altering or upd
 
 **Speed:** Deploying a full application can take longer than updating an existing one, potentially leading to slower release cycles.
 
-**Database Migrations:** Immutable deployments can complicate database migrations, as the database cannot be updated in the same way as the application. Database migrations are discussed in depth in [Continuous Database Deployment](../database-deployment/README.md).
+**Database Migrations:** Immutable deployments can complicate database migrations, as the database cannot be updated in the same way as the application. Database migrations are discussed in depth in [Continuous Database Deployment](../evolutionary-database-deployment/README.md).
 
 **Configuration Management:** Each deployment may require its own configuration, leading to increased complexity in configuration management. Effort should be made to limit this complication, but conditions may exist where it is difficult to avoid. Configurations should be versioned in coordination with their corresponding deployments.
 
@@ -32,7 +32,7 @@ Immutable application deployments refer to the practice of never altering or upd
 
 **Version Control:** Keep track of all versions of your application. This allows you to quickly roll back to a previous version if something goes wrong.
 
-**Health Checks:** Implement health checks at all levels of the application to monitor your application. This allows the system to perform some level of self-healing and allows SRE and incident response resources to have a better understanding of the state of the application should an incident arise.
+**Health Checks:** Implement health checks at all levels of the application to monitor your application. Health checks should only check "local" health and not "reach through" to attempt to do end-to-end health monitoring. End-to-end testing at this level is likely to create cascading failures and create ambiguous signals to incident responders. End-to-end testing should be implemented by an external availability monitor. Creating appropriate health checks at each level of the application architecture enables the system to perform some level of self-healing and allows SRE and incident response resources to have a better understanding of the state of the application should an incident arise.
 
 **Blue/Green Deployment:** Use blue/green deployment strategies to minimize downtime and risk. This involves having two environments (blue and green) and switching traffic between them when deploying new versions.
 
@@ -65,9 +65,3 @@ A list of tools that are useful when implementing Continuous Deployment is inclu
 **Prometheus:** An open-source systems monitoring and alerting toolkit.
 
 **ELK Stack (Elasticsearch, Logstash, Kibana):** Open source tools that together provide real time monitoring and analysis of data.
-
----
-**Document Revision History**
-| Date | Version | Author |Notes |
-| --- | --- | --- | --- |
-| 2024-03-15 | 1.0 | Ben Vaughan | Initial Release |

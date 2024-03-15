@@ -95,9 +95,3 @@ There are still many open questions about how to best use Helm for Continuous De
   * integrated with app deployment chart, or separate?
     * initial thought is to have them separate
   * must have data schema strategy that allows for N-1, N, N+1 -- [Evolutionary Database](https://www.martinfowler.com/articles/evodb.html)
-
----
-**Document Revision History**
-| Date | Version | Author |Notes |
-| --- | --- | --- | --- |
-| 2024-03-15 | 1.0 | Ben Vaughan | Initial Release |

@@ -25,11 +25,12 @@ This document outlines the development standards for Helm deployment charts. The
 
 * The chart name is defined in the `Chart.yaml` file. 
 * The chart name must be concise yet descriptive of the purpose of the chart.
-* The chart name should include `launch` as a prefix if the chart is meant to be reusable.
+* The chart name should include `chart_` and the chart type as a prefix.
+* The chart suffix should be a generic name for the workload type that the chart deploys.
 * Example of good chart names are these:
-  * `launch-deployment-chart`
-  * `launch-job-chart`
-  * `launch-library-chart`
+  * `chart_deployment-containerized_app`
+  * `chart_job-database_migration`
+  * `chart_library-launch`
 * Chart names should be unique.
 
 ## Chart Versioning
@@ -86,9 +87,3 @@ This document outlines the development standards for Helm deployment charts. The
 * Include a `README.md` file with instructions on how to use and configure the chart, including a reference for all variables that may be passed to the chart. 
   * Chart documentation tools are documented in the [helm-development top-level README](../../README.md#documentation)
 * Document any prerequisites or assumptions.
-
----
-**Document Revision History**
-| Date | Version | Author |Notes |
-| --- | --- | --- | --- |
-| 2024-03-15 | 1.0 | Ben Vaughan | Initial Release |
