@@ -40,6 +40,8 @@ Immutable application deployments refer to the practice of never altering or upd
 
 ## Popular Tools for Implementing Immutable Deployments
 
+A list of tools that are useful when implementing Continuous Deployment is included below. This is not a comprehensive list, nor is it meant to endorse any of these tools. Many more tools exist and some tools will work better than others in any given project. You are encouraged to understand the requirements of your project and find the best tool for the job. 
+
 **Docker:** A platform that enables developers to automate the deployment, scaling, and management of applications within containers.
 
 **Kubernetes:** An open-source platform designed to automate deploying, scaling, and operating application containers.
