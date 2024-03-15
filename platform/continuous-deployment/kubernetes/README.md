@@ -47,9 +47,9 @@ flowchart TD;
     to registry]
     B --> C[Render full chart from umbrella chart 
     using appVersion from artifact step]
-    C --> D[Validate chart with kubeconform]
-    D --> F([?Package rendered templates 
-    as deployment artifact?])
+    C --> D[Validate chart (dry-run, kubeconform, etc.)]
+    D --> F([Package rendered templates 
+    as deployment artifact])
     D --> E[helm upgrade --install ...]
     E --> G[Monitor deployment]
     G --> H{Approve?}
