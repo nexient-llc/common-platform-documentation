@@ -6,9 +6,9 @@ This document contains Best Practices and tools that the Launch Platform Team us
 
 ## Helm Development Standards Documents
 
-[Helm Deployment Charts](charts/deployment/README.md)
-[Helm Library Charts](charts/library/README.md)
-[Helm Template Helpers](helpers/README.md)
+* [Helm Deployment Charts](charts/deployment/README.md)
+* [Helm Library Charts](charts/library/README.md)
+* [Helm Template Helpers](helpers/README.md)
 
 ## Tools
 
